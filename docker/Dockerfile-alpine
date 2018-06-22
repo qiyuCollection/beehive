@@ -3,7 +3,7 @@ FROM golang:1.8-alpine
 LABEL authors="Gabriel Alacchi: alacchi.g@gmail.com, Christian Muehlhaeuser: muesli@gmail.com, Henry Wang: henry@wangqiru.com"
 
 # URL has to be set to the URL of Beehive admin interface
-ENV URL=http://localhost:8181
+ENV URL=http://beehive:8181
 
 # Install dependencies and beehive
 RUN apk add --no-cache git build-base --no-cache && \
